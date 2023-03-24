@@ -1,0 +1,111 @@
+* {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 20px;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    color: #eee;
+}
+
+body {
+    height: 100vh;
+    background-color: #A62639;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header, footer {
+    background-color: #56494e;
+    font-weight: 100;
+    padding: 15px;
+    width: 100%;
+    text-align: center;
+    font-size: 35px;
+}
+footer{
+    font-size: 15px;
+}
+.main {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.displayContainer {
+    background-color: #56494e;
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.display {
+    width: 590px;
+    height: 80px;
+    border: none;
+    background-color: #827d7c;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    justify-content: flex-end;
+    flex-direction: column;
+
+}
+.operation {
+    font-size: 25px;
+    color: #56494e;
+    font-style: italic;
+}
+.currentNumber, .previousNumber{
+    align-self: flex-end;
+}
+.calcContainer {
+    width: 610px;
+    height: 400px;
+    display: flex;
+    gap: 10px;
+}
+
+.numbers {
+    background-color: #511C29;
+    width: 75%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+
+button {
+    border: none;
+    background-color: #56494e;
+    color: #eee;
+    cursor: pointer;
+}
+
+button:hover{
+    background-color: #5f5c5c;
+}
+button:active{
+    background-color: #827d7c;
+}
+.operators {
+    background-color: #511C29;
+    width: 25%;
+    display: grid;
+    grid-template-columns: 1fr;
+
+}
+.clear {
+    color: #A62639;
+    font-size: 25px;
+}
+
+.clear:hover{
+    background-color: #511C29;
+}
+.clear:active{
+    background-color: #672233;
+}
+
